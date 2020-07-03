@@ -1,2 +1,2 @@
 # Competitive-Programming
-Random Stuff for CP
+My Random Stuff for CP
