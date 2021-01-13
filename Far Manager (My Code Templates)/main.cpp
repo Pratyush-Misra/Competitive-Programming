@@ -18,7 +18,7 @@ template <typename T> using oset = tree<T, null_type, less<T>, rb_tree_tag, tree
 #define fi first
 #define se second
 
-#define pii pair<int,int>
+#define pii pair<int,int> 
 #define pll pair<ll,ll>
 
 #define F_OR(i, a, b, s) for (int i=(a); (s)>0?i<(b):i>(b); i+=(s))
@@ -31,6 +31,10 @@ template <typename T> using oset = tree<T, null_type, less<T>, rb_tree_tag, tree
 #define FOR(...) F_ORC(__VA_ARGS__)(__VA_ARGS__)
 #define EACH(x, a) for (auto& x: a)
  
+template<class P,class Q> ll CEIL(const P& a,const Q& b){
+	return (ll)ceil((a*1.0)/b);
+}
+
 template<class T> bool umin(T& a, const T& b) {
 	return b<a?a=b, 1:0;
 }
@@ -38,29 +42,35 @@ template<class T> bool umin(T& a, const T& b) {
 template<class T> bool umax(T& a, const T& b) { 
 	return a<b?a=b, 1:0;
 } 
- 
+  
 mt19937 mt_rng(chrono::steady_clock::now().time_since_epoch().count());
+
 const int d4i[4]={-1, 0, 1, 0}, d4j[4]={0, 1, 0, -1};
 const int d8i[8]={-1, -1, 0, 1, 1, 1, 0, -1}, d8j[8]={0, 1, 1, 1, 0, -1, -1, -1};
-const int N=1e5+5; 
+const int N = 1e5+5;
+const long long INF = 1e18;
+const int MOD1 = 1e9+7;
+const int MOD2 = 998244353;
 
 void solve(){
+	//int n;	cin>>n;	vt<int> v(n);	FOR(n)	cin>>v[i];	
 	
+
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
-#ifdef LOCAL_DEFINE
+ 
 	//freopen("input.txt","r",stdin);
-	freopen("o.txt","w",stdout);
-#endif
+	//freopen("output.txt","w",stdout);
 
-	int t=1;//	cin>>t;
+	int t=1;	cin >> t;
 	FOR(t) {
-		//write("Case #", i+1, ": ");
+		//cout << "Case #" <<  (i+1) << ": ";
 		solve();
 	}
+
 
 #ifdef LOCAL_DEFINE
 	cerr << endl << "Time elapsed: " << 1.0 * clock() / CLOCKS_PER_SEC << " s" << endl;
